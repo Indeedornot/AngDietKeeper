@@ -1,2 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
-@import url("./styles/variables.css");
+@import "./styles/variables.css";
+
+html, body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: var(--color-fg-default);
+}
+
+h1:focus {
+  outline: none;
+}
+
+a, .btn-link {
+  color: #0071c1;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
