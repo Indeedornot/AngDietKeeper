@@ -102,9 +102,15 @@
   background: var(--color-bg-overlay);
   border: var(--color-border-subtle);
   color: var(--color-fg-default);
+  cursor: pointer;
 }
 
 .add-new:hover {
   background: var(--color-bg-hover);
+  color: var(--color-fg-emphasis);
+}
+
+.add-new:active {
+  background: var(--color-bg-accent);
   color: var(--color-fg-emphasis);
 }
