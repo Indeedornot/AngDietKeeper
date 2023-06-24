@@ -10,7 +10,7 @@
         </div>
 
         <div class="cards-container">
-          <!--  cards  -->
+          <app-card *ngFor="let card of cards; index as i" [card]="card"></app-card>
         </div>
 
         <div class="card-display-footer">
