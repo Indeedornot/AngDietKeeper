@@ -51,6 +51,13 @@
       "rules": {
         "prettier/prettier": ["error", { "parser": "angular" }]
       }
+    },
+    {
+      "files": ["*.html"],
+      "excludedFiles": ["*inline-template-*.component.html"],
+      "rules": {
+        "eqeqeq": "error"
+      }
     }
   ]
 }
