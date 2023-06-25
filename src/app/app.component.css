@@ -63,13 +63,15 @@
   width: 100%;
   align-items: center;
 
-  gap: 6px;
-
   background: var(--color-bg-overlay);
 }
 
-.cards-container .card {
-  flex: none;
+.cards-container > * {
+  margin: 4px 6px;
+}
+
+.cards-container > *:first-child {
+  margin-top: 6px;
 }
 
 .card-display-footer {

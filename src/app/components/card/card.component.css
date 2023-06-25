@@ -1,0 +1,7 @@
+:host {
+  align-self: stretch;
+
+  min-height: 63px;
+  border-radius: 10px;
+  background: var(--color-bg-default);
+}
