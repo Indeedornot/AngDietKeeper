@@ -11,7 +11,7 @@ export class AppComponent {
   cards: Card[] = SampleCards;
   budget = 100;
   budgetLeft = this.budget;
-  currencySymbol = '$';
+  currencySymbol = '$'; // make a global constant
 
   calories = 2000;
   caloriesLeft = this.calories;
