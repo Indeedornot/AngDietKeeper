@@ -3,7 +3,7 @@
 @import "./styles/scrollbar.css";
 
 html, body {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: var(--font-family-default);
   color: var(--color-fg-default);
   margin: 0;
   height: 100vh;

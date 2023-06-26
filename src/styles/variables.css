@@ -28,4 +28,13 @@ body {
   --color-border-muted: rgb(33 38 45);
   --color-border-subtle: rgba(240 246 252 / 0.1);
   --color-border-emphasis: rgb(255 255 255);
+
+  --font-family-default: 'Estedad-FD', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@font-face {
+  font-family: 'Estedad-FD';
+  src: url('../assets/fonts/estedad/Estedad.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
 }
