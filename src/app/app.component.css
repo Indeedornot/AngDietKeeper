@@ -1,11 +1,3 @@
-.body{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  width: 100vw;
-}
-
 .content {
   background: var(--gray-700);
   height: 100vh;
@@ -13,12 +5,12 @@
   display: flex;
   flex: none;
   flex-direction: column;
+  min-height: 0;
   border-radius: 0px;
 }
 
 .header {
   height: 40px;
-  width: 100%;
   background: var(--gray-700);
 }
 
@@ -26,6 +18,7 @@
   display: flex;
   flex: 1 0 0;
   flex-direction: column;
+  min-height: 0;
   --card-display-height: 78%;
 }
 
@@ -34,6 +27,7 @@
   display: flex;
   flex: none;
   flex-direction: column;
+  min-height: 0;
   margin: 0px 2px 0px 2px;
   border: 2px solid var(--gray-900);
   border-radius: 20px 20px 20px 20px;
@@ -55,6 +49,7 @@
   flex: none;
   justify-content: space-between;
   align-items: center;
+  min-width: 0;
 
   padding: 0 16px 0 16px;
 
@@ -67,10 +62,9 @@
   display: flex;
   flex: 1 0 0;
   flex-direction: column;
+  min-height: 0;
 
   overflow-y: auto;
-
-  width: 100%;
   align-items: center;
 
   background: var(--gray-700);
@@ -104,6 +98,7 @@
   flex: none;
   justify-content: space-between;
   align-items: center;
+  min-width: 0;
 
   padding: 0 16px 0 16px;
 
@@ -113,12 +108,12 @@
 }
 
 .display-footer {
-  height: calc(100% - var(--card-display-height));
+  height: calc(100% - var(--card-display-height) - 1);
   display: flex;
   flex: none;
   justify-content: center;
   align-items: center;
-  min-height: 0;
+  min-width: 0;
 }
 
 .add-new {
