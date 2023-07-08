@@ -17,5 +17,5 @@
 
 .styled-scrollbar::-webkit-scrollbar-track {
   /* Background */
-  background: #333;
+  background: var(--zinc-700);
 }
