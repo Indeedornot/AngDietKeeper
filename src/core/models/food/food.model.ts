@@ -1,5 +1,4 @@
 import { XOR } from '@core/helpers/types';
-import { isUndefined } from '@core/helpers/guards';
 
 type Price = number | 'free' | 'variable' | 'ignored';
 
