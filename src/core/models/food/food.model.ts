@@ -1,17 +1,11 @@
 import { XOR } from '@core/helpers/types';
 
-type Price = number | 'free' | 'variable' | 'ignored';
-
 type Serving = {
-  price: Price;
   calories: number;
-  //measured in grams
   size: number;
 };
 
 type Weight = {
-  price: Price;
-  //per 100 grams
   calories: number;
 };
 
@@ -23,16 +17,8 @@ export interface Food {
 }
 
 export const ServingToWeight = (serving: Serving): Weight => {
-  let price: Price = serving.price;
-  if (typeof price === 'number') {
-    price = price / serving.size;
-  }
-
-  const calories = serving.calories / serving.size;
-
   return {
-    price: price,
-    calories: calories
+    calories: serving.calories / serving.size
   };
 };
 
